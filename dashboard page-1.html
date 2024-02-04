@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .dashboard {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .username-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .quiz-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            align-content: center;  
+        }
+
+        .reset-button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            align-content: center;  
+        }
+
+        .review-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            align-content: center;
+        }
+
+        .review-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="dashboard">
+        <h1>DASHBOARD</h1>
+    </div>
+
+    <div class="username-container">
+        <label for="username">Welcome Username: PPM</label>
+        <!--fill uid here srinivas i dont know how to do that-->
+    </div>
+    <br><br><br>
+    <!-- here data will come from priyansh just display it on console-->
+    
+    <div class="quiz-button-container">
+        <button class="quiz-button" id = "quiz-button" onclick="startquiz()">Take quiz</button>
+    </div>
+    <br><br>
+    <div class="review-button-container">
+        <button class="review-button" id = "review-button" onclick="review()">Review</button>
+    </div>
+    <br><br>
+    
+    <!-- Enable the reset button below and the reset function in dashboard to restart the webpage -->
+    <!-- <div class="reset-button-container">
+        <button class="reset-button" id = "reset-button" onclick="reset()">Reset</button>
+    </div> -->
+
+
+    <script src="dashboard.js" onload="startup()"></script>
+
+</body>
+</html>

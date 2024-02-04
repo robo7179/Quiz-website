@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard - 2</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align:center;
+        }
+        #Head{
+            background-color:#4CAF50;
+            text-align: center;
+            font-size: xx-large;
+            color:white;
+            padding: 35px;
+        }
+        green_button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            align-content: center;
+        }
+        red_button{
+            background-color: #de0c0c;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            align-content: center;
+        }
+        yellow_button{
+            background-color: #e8e408;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            align-content: center;
+        }    
+        span{
+            margin-left: 100px ;
+        }
+        div{
+            border : 2px ;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header id="Head">
+            Review
+        </header>
+
+        <div style="text-align: center;"> Username : PPM</div><br><br><br>
+        <div id="q1">
+            1.
+            <green_button> Question 1</green_button>:
+            <span id="q1.span">
+                <green_button>Correct</green_button><yellow_button>Unattempted</yellow_button><red_button>Wrong</red_button>
+            </span>
+        </div>
+
+        <br><br><br>
+
+        <div id="q2">
+            2.
+            <green_button> Question 2</green_button>:
+            <span id="q2.span">
+                <green_button>Correct</green_button><yellow_button>Unattempted</yellow_button><red_button>Wrong</red_button>
+            </span>
+        </div>
+
+        <br><br><br>
+
+        <div id="q3">
+            3.
+            <green_button> Question 3</green_button>:
+            <span id="q3.span">
+                <green_button>Correct</green_button><yellow_button>Unattempted</yellow_button><red_button>Wrong</red_button>
+            </span>
+        </div>
+
+        <br><br><br>
+
+        <div style="font-size: large;color:rgb(0, 0, 0);" id = "scoreboard">
+            You scored the following marks:
+            <span id="mark.span"> </span>
+        </div>
+
+        <script src = "review.js" onload="startup()"></script>
+
+    </body>
+</html>

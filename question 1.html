@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <style>
+        body {
+            background-color: #f8f8ff;
+            margin: 0;
+            padding: 10px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navigation-buttons {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: large;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .question-container {
+            margin: 20px auto;
+            max-width: 600px;
+            border: 4px solid blueviolet;
+            padding: 20px;
+            color: black;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-label {
+            font-size: xx-large;
+            font-weight: 700;
+            color: blueviolet;
+        }
+
+        .question-text {
+            font-size: x-large;
+            font-style: italic;
+        }
+
+        .answer-form {
+            margin-top: 20px;
+        }
+
+        .answer-label {
+            font-size: x-large;
+        }
+
+        .answer-input {
+            width: 100px;
+            padding: 5px;
+        }
+
+        .page-mover {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .submit-button {
+            background-color: #008CBA;
+        }
+
+        .reset-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #f44336;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Interactive Quiz</h1>
+    </div>
+
+    <div class="navigation-buttons">
+        <button onclick="showQuestion(1)">Question 1</button>
+        <button onclick="showQuestion(2)">Question 2</button>
+        <button onclick="showQuestion(3)">Question 3</button>
+    </div>
+
+    <div class="question-container" id="question1">
+        <label class="question-label" for="question"> Question no: 1 </label>
+        <p class="question-text">
+            <i>1.&nbsp;&nbsp; Which of the following are the smallest?</i>
+            <br>
+            <i>&nbsp;&nbsp;&nbsp;12&nbsp;,&nbsp;34&nbsp;,&nbsp;56&nbsp;,&nbsp;68</i>
+        </p>
+
+        <form class="answer-form" action="answer" method="post">
+            <label class="answer-label" for="ans"> Enter your answer here:</label>
+            <input class="answer-input" type="number" id="ans1" name="ans1" min = 0>
+        </form>
+    </div>
+
+    <div class="page-mover">
+        <div class="navigation-buttons">
+            <!-- <button id="prevButton">Previous</button> -->
+            <button id="nextButton" onclick="showQuestion(2)">Next</button>
+            <button type="submit" class="submit-button" onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+    <button type="reset" class="reset-button" onclick="reset()">Reset</button>
+
+    <script src="q1.js" onload="startup()"></script>
+</body>
+
+</html>
